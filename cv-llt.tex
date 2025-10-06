@@ -67,43 +67,35 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\leftheader{%
-  {\LARGE\bfseries\sffamily Your Name Here, Ph.D.}
+\leftheader{% 
+  {\LARGE\bfseries\sffamily M{\"u}sel Emmanuel Tabares Pardo}
 
-  \makefield{\faEnvelope[regular]}{\href{mailto:example@gmail.com}{\texttt{example@gmail.com}}}
-  % fontawesome5 doesn't have the X icon so we use
-  % the simpleicons package here instead; but some 
-  % font size adjustment might be needed
-  \makefield{{\scriptsize\simpleicon{x}}}{\!\href{https://x.com/overleaf_example}{\texttt{@overleaf\_example}}}
-  \makefield{\faLinkedin}
-  {\href{http://www.linkedin.com/in/example/}{\texttt{example}}}
+  \makefield{\faEnvelope[regular]}{\href{mailto:muselemmanuel@hotmail.com}{\texttt{muselemmanuel@hotmail.com}}}
+  \makefield{\faPhone}{\texttt{(+52)\,663\,104\,6329}}
 
   %% Next line
-  \makefield{\faGlobe}{\url{http://example.example.org/}}
-  % You can use a tabular here if you want to line up the fields.
+  \makefield{\faGlobe}{\url{https://musel.dev}}
+  \makefield{\faMapMarker*}{France}\hspace{1em}\smallcaps{Mexican}\,\,\textbar\,\,\smallcaps{DoB:} 05/08/2002
 }
 
 \rightheader{~}
-\begin{fullonly}
-\photo[r]{photo}
-\photoscale{0.13}
-\end{fullonly}
+% \begin{fullonly}
+% \photo[r]{photo}
+% \photoscale{0.13}
+% \end{fullonly}
 
 \title{Curriculum Vitae}
 
 \begin{document}
 \makeheaders[c]
 
+\makerubric{about}
 \makerubric{employment}
 \makerubric{education}
-
-% If you're not a researcher nor an academic, you probably don't have any publications; delete this line.
-%% Sometimes when a section can't be nicely modelled with the \entry[]... mechanism; hack our own and use \input NOT \makerubric
-\input{publications}
-
+\makerubric{projects}
 \makerubric{skills}
-\makerubric{misc}
-
+\makerubric{languages}
+\makerubric{volunteering}
 \makerubric{referee}
 % \input{referee-full}
 
