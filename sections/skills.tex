@@ -1,12 +1,34 @@
 %!TEX encoding = UTF8
 %!TEX root =cv-llt.tex
 
+
+
 \begin{rubric}{Skills}
 \noentry{~}
-\entry*[LLM Training \& Alignment]
-  PyTorch; Hugging Face Transformers/PEFT/TRL; tokenization; SFT, LoRA/QLoRA, DPO; multilingual (EN/FR).
-\entry*[Serving \& MLOps]
-  vLLM, TGI; FastAPI; llama.cpp/GGUF; Git, Linux, Docker, Kubernetes; experiment tracking (W\&B/MLflow); CI/CD; PyTorch Profiler.
-\entry*[Data, RAG \& Evaluation]
-  Dataset curation (cleaning/dedup/PII); vector search (FAISS/Qdrant) \& rerankers; prompt/retrieval pipelines; lm-evaluation-harness; A/B evals; safety/robustness.
+\entry*[LLM Training]
+PyTorch; HF Transformers/PEFT/TRL; tokenizers(SentencePiece/Tiktoken); SFT, LoRA/QLoRA, DPO; Hydra configs; HF Datasets (streaming);
+run tracking (W and B/MLflow/Comet).
+
+\entry*[RAG and Data]
+Qdrant/FAISS (HNSW); chunking (recursive/semantic); retrievers (self-querying/hybrid) + rerankers (bge-reranker/Cohere); decontamination/PII; CDC snapshotting; Pydantic; MongoDB+ODM; ZenML orchestration; Selenium/Playwright crawling.
+
+\entry*[MLOps]
+vLLM, TGI, llama.cpp (GGUF); quantization (GPTQ/EXL2), KV cache, continuous batching, speculative decoding; FastAPI; AWS SageMaker (HF DLC); Docker/Kubernetes; GitHub Actions (CI/CD/CT); monitoring/guardrails (Opik, OpenTelemetry); PyTorch Profiler; A/B testing.
+
+\entry*[Evaluation]
+lm-evaluation-harness; Ragas/ARES; deterministic prompts/seeds; contamination checks; RAG metrics and error analysis.
+% lightweight leaderboard UI and model cards; refusal/jailbreak tests; prompt monitoring/alerts.
 \end{rubric}
+
+
+
+
+% \begin{rubric}{Skills}
+% \noentry{~}
+% \entry*[LLM Training \& Alignment]
+%   PyTorch; Hugging Face Transformers/PEFT/TRL; tokenization; SFT, LoRA/QLoRA, DPO; multilingual (EN/FR).
+% \entry*[Serving \& MLOps]
+%   vLLM, TGI; FastAPI; llama.cpp/GGUF; Git, Linux, Docker, Kubernetes; experiment tracking (W\&B/MLflow); CI/CD; PyTorch Profiler.
+% \entry*[Data, RAG \& Evaluation]
+%   Dataset curation (cleaning/dedup/PII); vector search (FAISS/Qdrant) \& rerankers; prompt/retrieval pipelines; lm-evaluation-harness; A/B evals; safety/robustness.
+% \end{rubric}
