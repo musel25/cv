@@ -1,0 +1,60 @@
+\begin{rubricnorepeat}{Projets}
+\noentry{~}
+
+\entry*[Instruction Tuning (SFT+QLoRA)]
+Chaîne complète d’instruction-tuning avec gabarits de prompts, tokenisation et adaptateurs QLoRA; configurations reproductibles, exécutions journalisées, checkpoints et artefacts; exécuteur conteneurisé.\hfill \href{https://github.com/musel25/instruction-tuning}{\faGithub}
+
+\entry*[Alignement par préférences (DPO)]
+Génération et curation de données de préférences par paires; adaptateurs DPO entraînés et comparés à des baselines SFT avec évaluations déterministes et vérifications de refus/garde-fous.\hfill \href{https://github.com/musel25/preference-alignment-dpo}{\faGithub}
+
+\entry*[Usine de jeux de données d’instructions]
+Pipeline de données pour jeux d’instructions/chat: filtrage par règles, déduplication, décontamination, scoring de qualité, augmentation et rendu via modèles de chat; fiches et statistiques des jeux de données.\hfill \href{https://github.com/musel25/instruction-dataset-factory}{\faGithub}
+
+\entry*[Pipeline de collecte LLM Twin]
+Crawler orchestrés avec ZenML (GitHub/Medium/Custom) via patron dispatcher et retries; documents bruts stockés dans MongoDB via un ODM, avec fallbacks Selenium et traçabilité des métadonnées.\hfill \href{https://github.com/musel25/llm-twin-data-pipeline}{\faGithub}
+
+\entry*[Pipeline de fonctionnalités RAG]
+Nettoyage, découpage et embeddings dans Qdrant avec snapshots CDC; entités de domaine Pydantic, dispatchers OVM et configuration d’index HNSW pour arbitrer précision/latence.\hfill \href{https://github.com/musel25/rag-feature-pipeline}{\faGithub}
+
+\entry*[Inférence RAG avancée]
+Module de recherche avec expansion de requête, self-querying, recherche vectorielle filtrée et reranking.\hfill \href{https://github.com/musel25/rag-inference-advanced}{\faGithub}
+
+\entry*[Évaluation LLM]
+Évaluations hors ligne reproductibles (général/tâche/RAG) avec prompts/semences déterministes, contrôles de contamination et métriques RAG (Ragas/ARES); interface de leaderboard minimal et fiches modèles.\hfill \href{https://github.com/musel25/llm-eval-harness}{\faGithub}
+
+\entry*[Quantification pour l’inférence]
+Benchmarks débit/latence sur variantes GGUF, GPTQ et EXL2; expériences avec cache KV, batching continu et décodage spéculatif; rapport compact.\hfill \href{https://github.com/musel25/inference-optimization-quantization}{\faGithub}
+
+\entry*[Inférence SageMaker]
+Déploiement Hugging Face DLC sur AWS SageMaker; service métier FastAPI appelant l’endpoint.\hfill \href{https://github.com/musel25/sagemaker-inference-microservice}{\faGithub}
+
+% \entry*[LLMOps: CI/CD/CT]
+% Pipelines GitHub Actions pour CI/CD/CT; pipelines ZenML dockerisés sur clouds; suivi d’expériences Comet, monitoring des prompts Opik, alertes et garde-fous à l’exécution.\hfill \href{https://github.com/musel25/llmops-cicd-monitoring}{\faGithub}
+
+\entry*[Télémétrie RAG YANG]
+De bout en bout: indexation de documents de télémétrie (Markdown/YANG/JSON) dans Qdrant; prompting « context-only » via Ollama/OpenAI; setup Docker reproductible et CLI pour indexer/poser des questions.\hfill 
+\href{https://github.com/musel25/telemetry-rag}{\faGithub}
+
+\entry*[Segmentation du ventricule gauche]
+U-Net pour la segmentation du ventricule gauche sur Stanford EchoNet-Dynamic; comparaison masques pixel-à-pixel vs. détection de points de repère; évaluation et traitement morphologique.\hfill\href{https://github.com/Tec-AI-23/EchoNetDynamic}{\faGithub}
+
+\entry*[ML pour la reconnaissance d’activité]
+Évaluation de 18 algorithmes ML avec recherche de grille sur des données d’accéléromètre pour classifier les niveaux d’activité chez des personnes âgées; validation par CV et tests de significativité.\hfill \href{https://github.com/Tec-AI-23/HAR70}{\faGithub}
+
+\entry*[Prévision hydrologique par vision]
+Pipeline CNN profond prédisant le niveau des rivières à partir d’images; transfert d’apprentissage EfficientNet et entrées multimodales (visuel + hydrologique) pour des gains de précision.\hfill \href{https://github.com/musel25/research_deep_learning}{\faGithub}
+
+\entry*[LLM + RAG pour métaheuristiques]
+Cadre automatisé utilisant RAG + LLM pour générer et affiner des métaheuristiques pour l’optimisation « boîte noire »; intégration de Qwen2.5-coder, ChromaDB et Optuna.\hfill \href{https://github.com/musel25/llm-metaheuristics}{\faGithub}
+
+\entry*[CNN leucocytes + LIME]
+CNN pour classifier les leucocytes (cancéreux vs non cancéreux) avec explications LIME mettant en évidence les régions déterminantes. 
+
+\entry*[Chatbot GPT-2 affiné]
+Affinage de GPT-2 sur des conversations WhatsApp; parsing regex vers HF Datasets; entraînement et déploiement d’un pipeline de chatbot interactif.\hfill \href{https://github.com/musel25/her_if_it_was_2025}{\faGithub}
+
+\entry*[Application web NLP]
+Classificateur d’émotions en texte en temps réel avec journalisation et analytique; développé avec Streamlit et un prétraitement NLP standard.\hfill \href{https://github.com/musel25/nlp_project}{\faGithub}
+
+\end{rubricnorepeat}
+

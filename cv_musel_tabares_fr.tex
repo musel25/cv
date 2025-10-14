@@ -1,0 +1,64 @@
+%%%%%%%%%%%%%%%
+% Version française du CV
+\documentclass[a4paper,skipsamekey,11pt,french]{curve}
+
+% \usepackage{ctex} % non requis
+
+\PassOptionsToPackage{style=ieee,sorting=ydnt,uniquename=init,defernumbers=true}{biblatex}
+\usepackage{settings}
+
+\continuedname{}
+
+% Chaînes biblatex spécifiques au français (optionnel)
+\DefineBibliographyStrings{french}{url={\textsc{url}}}
+
+% \addbibresource{bib/own-bib.bib}
+
+% Polices
+\ifxetexorluatex
+  \usepackage{fontspec}
+  \usepackage[p,osf,swashQ]{cochineal}
+  \usepackage[medium,bold]{cabin}
+  \usepackage[varqu,varl,scale=0.9]{zi4}
+\else
+  \usepackage[T1]{fontenc}
+  \usepackage[p,osf,swashQ]{cochineal}
+  \usepackage{cabin}
+  \usepackage[varqu,varl,scale=0.9]{zi4}
+\fi
+
+\geometry{left=1cm,right=1cm,top=1.5cm,bottom=1.5cm}
+
+% Afficher la photo seulement en mode "fullonly"
+\includecomment{fullonly}
+
+\leftheader{% 
+  {\LARGE\bfseries\sffamily M{\"u}sel Emmanuel Tabares Pardo}
+
+  \makefield{\faEnvelope[regular]}{\href{mailto:muselemmanuel@hotmail.com}{\texttt{muselemmanuel@hotmail.com}}}
+  \makefield{\faPhone}{\texttt{(+52)\,663\,104\,6329}}
+  \makefield{\faGithub}{\href{https://github.com/musel25}{\texttt{musel25}}}
+
+  \makefield{\faGlobe}{\href{https://musel.dev}{\texttt{musel.dev}}}
+  \hspace{1em}
+  \makefield{\faMapMarker*}{Compi\`egne, France}
+  \smallcaps{Mexicain}\,\,\textbar\,\,\smallcaps{N\'e le:} 05/08/2002
+}
+
+\rightheader{~}
+
+\title{Curriculum Vitae}
+
+\begin{document}
+\makeheaders[c]
+
+\makerubric{sections_fr/about}
+\makerubric{sections_fr/employment}
+\makerubric{sections_fr/education}
+\makerubric{sections_fr/projects}
+\makerubric{sections_fr/skills}
+\makerubric{sections_fr/languages}
+% \makerubric{sections_fr/volunteering}
+
+\end{document}
+
