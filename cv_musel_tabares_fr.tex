@@ -7,6 +7,17 @@
 \PassOptionsToPackage{style=ieee,sorting=ydnt,uniquename=init,defernumbers=true}{biblatex}
 \usepackage{settings}
 
+% --- Signature configuration (optional) ---
+% Toggle and fields to show a signature block at the end of the CV.
+% - Set \includesignaturetrue to enable; \includesignaturefalse to hide.
+% - Adjust city/date; point \signatureimage to a signature image if desired.
+\newif\ifincludesignature
+\includesignaturetrue
+\newcommand{\signaturecity}{Compiègne}
+\newcommand{\signaturedate}{\today}
+% If the file doesn't exist, nothing will be included.
+\newcommand{\signatureimage}{sections_fr/sign.png}
+
 \continuedname{}
 
 % Chaînes biblatex spécifiques au français (optionnel)
@@ -62,5 +73,14 @@
 \makerubric{sections_fr/languages}
 % \makerubric{sections_fr/volunteering}
 
-\end{document}
+% --- Optional signature block ---
+\ifincludesignature
+\vspace{1.5cm}
+\begin{center}
+  {\small\itshape Fait à \signaturecity, le \signaturedate}\\[2ex]
+  \IfFileExists{\signatureimage}{\includegraphics[height=1.6cm]{\signatureimage}\\[1ex]}{}
+  {\bfseries M{\"u}sel Emmanuel Tabares Pardo}
+\end{center}
+\fi
 
+\end{document}
